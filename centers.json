@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Nairobi Women's Hospital - Hurlingham",
+    "location": "Nairobi",
+    "type": "Medical",
+    "phone": "0709 630000"
+  },
+  {
+    "name": "Kenyatta National Hospital",
+    "location": "Nairobi",
+    "type": "Medical",
+    "phone": "020 2726300"
+  },
+  {
+    "name": "Gender Violence Recovery Centre (GVRC)",
+    "location": "Nairobi",
+    "type": "Counselling",
+    "phone": "0715 711111"
+  },
+  {
+    "name": "Mbagathi Hospital",
+    "location": "Nairobi",
+    "type": "Medical",
+    "phone": "020 2729502"
+  },
+  {
+    "name": "Kiambu Level 5 Hospital",
+    "location": "Kiambu",
+    "type": "Medical",
+    "phone": "0700 000000"
+  },
+  {
+    "name": "Thika Level 5 Hospital",
+    "location": "Kiambu",
+    "type": "Medical",
+    "phone": "067 2210000"
+  },
+  {
+    "name": "Ruiru Sub-County Hospital",
+    "location": "Kiambu",
+    "type": "Medical",
+    "phone": "0722 000000"
+  },
+  {
+    "name": "Nyeri County Referral Hospital",
+    "location": "Nyeri",
+    "type": "Medical",
+    "phone": "061 2030000"
+  },
+  {
+    "name": "Outspan Hospital",
+    "location": "Nyeri",
+    "type": "Medical",
+    "phone": "061 2031000"
+  },
+  {
+    "name": "Nanyuki Teaching and Referral Hospital",
+    "location": "Laikipia",
+    "type": "Medical",
+    "phone": "062 2030000"
+  },
+  {
+    "name": "Kajiado County Referral Hospital",
+    "location": "Kajiado",
+    "type": "Medical",
+    "phone": "0721 000000"
+  },
+  {
+    "name": "Oloitokitok Sub-County Hospital",
+    "location": "Kajiado",
+    "type": "Medical",
+    "phone": "0733 000000"
+  },
+  {
+    "name": "Kajiado Police Station GBV Desk",
+    "location": "Kajiado",
+    "type": "Legal",
+    "phone": "999"
+  },
+  {
+    "name": "Nakuru Level 5 Hospital",
+    "location": "Nakuru",
+    "type": "Medical",
+    "phone": "051 2210000"
+  },
+  {
+    "name": "Eldoret Referral Hospital",
+    "location": "Uasin Gishu",
+    "type": "Medical",
+    "phone": "053 2030000"
+  },
+  {
+    "name": "Garissa County Referral Hospital",
+    "location": "Garissa",
+    "type": "Medical",
+    "phone": "046 2100000"
+  },
+  {
+    "name": "Isiolo County Hospital",
+    "location": "Isiolo",
+    "type": "Medical",
+    "phone": "064 5200000"
+  },
+  {
+    "name": "Marsabit County Referral Hospital",
+    "location": "Marsabit",
+    "type": "Medical",
+    "phone": "069 2100000"
+  },
+  {
+    "name": "Wajir County Referral Hospital",
+    "location": "Wajir",
+    "type": "Medical",
+    "phone": "046 5200000"
+  },
+  {
+    "name": "Mandera County Referral Hospital",
+    "location": "Mandera",
+    "type": "Medical",
+    "phone": "046 6200000"
+  }
+]
