@@ -19,12 +19,14 @@ logger = logging.getLogger(__name__)
 # ── Config ──────────────────────────────────
 API_KEY  = os.environ.get("RAPIDAPI_KEY", "68ba2a96e3msh69a4973216ca155p1562f4jsnf04bcad350f9")
 API_HOST = "africa-health-facilities-api1.p.rapidapi.com"
-BASE_URL = f"https://{africa-health-facilities-api1.p.rapidapi.com}/api/v1"
+BASE_URL = f"https://africa-health-facilities-api1.p.rapidapi.com/api/v1"
 
-HEADERS = {
-    "x-rapidapi-key":  API_KEY,
-    "x-rapidapi-host": API_HOST,
+headers = {
+	"x-rapidapi-key": "68ba2a96e3msh69a4973216ca155p1562f4jsnf04bcad350f9",
+	"x-rapidapi-host": "africa-health-facilities-api1.p.rapidapi.com",
+	"Content-Type": "application/json"
 }
+
 
 # ── Simple In-Memory Cache ───────────────────
 _cache: dict = {}
@@ -69,7 +71,7 @@ def get_centers():
     try:
         url = f"{BASE_URL}/search"
         params = {"country": country, "limit": limit, "page": page}
-        resp = requests.get(url, headers=HEADERS, params=params, timeout=10)
+        resp = requests.get(url, headers=headers, params=params, timeout=10)
         resp.raise_for_status()
 
         data = resp.json()
@@ -104,7 +106,7 @@ def get_facility(facility_id):
 
     try:
         url  = f"{BASE_URL}/facility/{facility_id}"
-        resp = requests.get(url, headers=HEADERS, timeout=10)
+        resp = requests.get(url, headers=headers, timeout=10)
         resp.raise_for_status()
 
         data = resp.json()
@@ -133,7 +135,7 @@ def search_facilities():
     try:
         url  = f"{BASE_URL}/search"
         params = {"search": query, "country": country, "limit": limit}
-        resp = requests.get(url, headers=HEADERS, params=params, timeout=10)
+        resp = requests.get(url, headers=header, params=params, timeout=10)
         resp.raise_for_status()
         return jsonify(resp.json())
 
