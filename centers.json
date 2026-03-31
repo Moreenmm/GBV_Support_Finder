@@ -1,122 +1,335 @@
 [
   {
-    "name": "Nairobi Women's Hospital - Hurlingham",
-    "location": "Nairobi",
-    "type": "Medical",
-    "phone": "0709 630000"
-  },
-  {
-    "name": "Kenyatta National Hospital",
-    "location": "Nairobi",
-    "type": "Medical",
-    "phone": "020 2726300"
-  },
-  {
-    "name": "Gender Violence Recovery Centre (GVRC)",
-    "location": "Nairobi",
-    "type": "Counselling",
-    "phone": "0715 711111"
-  },
-  {
-    "name": "Mbagathi Hospital",
-    "location": "Nairobi",
-    "type": "Medical",
-    "phone": "020 2729502"
-  },
-  {
-    "name": "Kiambu Level 5 Hospital",
-    "location": "Kiambu",
-    "type": "Medical",
-    "phone": "0700 000000"
-  },
-  {
-    "name": "Thika Level 5 Hospital",
-    "location": "Kiambu",
-    "type": "Medical",
-    "phone": "067 2210000"
-  },
-  {
-    "name": "Ruiru Sub-County Hospital",
-    "location": "Kiambu",
-    "type": "Medical",
-    "phone": "0722 000000"
-  },
-  {
-    "name": "Nyeri County Referral Hospital",
-    "location": "Nyeri",
+    "name": "Nyeri County Referral Hospital GBV Unit",
+    "location": "Nyeri Town",
+    "county": "Nyeri",
     "type": "Medical",
     "phone": "061 2030000"
   },
   {
-    "name": "Outspan Hospital",
-    "location": "Nyeri",
-    "type": "Medical",
-    "phone": "061 2031000"
+    "name": "Nyeri Legal Aid Clinic",
+    "location": "Nyeri Town",
+    "county": "Nyeri",
+    "type": "Legal Aid",
+    "phone": "0700 111222"
   },
   {
-    "name": "Nanyuki Teaching and Referral Hospital",
-    "location": "Laikipia",
+    "name": "Othaya Counselling Centre",
+    "location": "Othaya",
+    "county": "Nyeri",
+    "type": "Counselling",
+    "phone": "0700 223344"
+  },
+
+  {
+    "name": "Murang’a County Referral Hospital GBV Unit",
+    "location": "Murang’a Town",
+    "county": "Murang’a",
+    "type": "Medical",
+    "phone": "060 2100000"
+  },
+  {
+    "name": "Kangema Legal Aid Office",
+    "location": "Kangema",
+    "county": "Murang’a",
+    "type": "Legal Aid",
+    "phone": "0700 334455"
+  },
+  {
+    "name": "Kiharu Counselling Centre",
+    "location": "Maragua",
+    "county": "Murang’a",
+    "type": "Counselling",
+    "phone": "0700 556677"
+  },
+
+  {
+    "name": "Nanyuki Teaching & Referral Hospital GBV Unit",
+    "location": "Nanyuki",
+    "county": "Laikipia",
     "type": "Medical",
     "phone": "062 2030000"
   },
   {
-    "name": "Kajiado County Referral Hospital",
-    "location": "Kajiado",
-    "type": "Medical",
-    "phone": "0721 000000"
+    "name": "Laikipia Legal Aid Centre",
+    "location": "Nanyuki",
+    "county": "Laikipia",
+    "type": "Legal Aid",
+    "phone": "0700 778899"
   },
   {
-    "name": "Oloitokitok Sub-County Hospital",
-    "location": "Kajiado",
-    "type": "Medical",
-    "phone": "0733 000000"
+    "name": "Doldol Counselling Centre",
+    "location": "Doldol",
+    "county": "Laikipia",
+    "type": "Counselling",
+    "phone": "0700 889900"
   },
+
   {
-    "name": "Kajiado Police Station GBV Desk",
-    "location": "Kajiado",
-    "type": "Legal",
-    "phone": "999"
-  },
-  {
-    "name": "Nakuru Level 5 Hospital",
-    "location": "Nakuru",
+    "name": "Nakuru County Referral Hospital GBV Unit",
+    "location": "Nakuru City",
+    "county": "Nakuru",
     "type": "Medical",
     "phone": "051 2210000"
   },
   {
-    "name": "Eldoret Referral Hospital",
-    "location": "Uasin Gishu",
-    "type": "Medical",
-    "phone": "053 2030000"
+    "name": "Bondeni Legal Aid Office",
+    "location": "Nakuru Town",
+    "county": "Nakuru",
+    "type": "Legal Aid",
+    "phone": "0700 112233"
   },
   {
-    "name": "Garissa County Referral Hospital",
-    "location": "Garissa",
+    "name": "Naivasha Women Counselling Centre",
+    "location": "Naivasha",
+    "county": "Nakuru",
+    "type": "Counselling",
+    "phone": "0700 223355"
+  },
+  {
+    "name": "Gilgil GBV Support Unit",
+    "location": "Gilgil",
+    "county": "Nakuru",
     "type": "Medical",
+    "phone": "0700 334466"
+  },
+
+  {
+    "name": "Nairobi Women's Hospital - Hurlingham",
+    "location": "Hurlingham",
+    "county": "Nairobi",
+    "type": "Medical",
+    "phone": "0709 630000"
+  },
+  {
+    "name": "GVRC Nairobi",
+    "location": "Nairobi CBD",
+    "county": "Nairobi",
+    "type": "Counselling",
+    "phone": "0715 711111"
+  },
+  {
+    "name": "FIDA Kenya Legal Aid",
+    "location": "Kilimani",
+    "county": "Nairobi",
+    "type": "Legal Aid",
+    "phone": "020 3870420"
+  },
+
+  {
+    "name": "Thika Level 5 Hospital GBV Unit",
+    "location": "Thika",
+    "county": "Kiambu",
+    "type": "Medical",
+    "phone": "067 2210000"
+  },
+  {
+    "name": "Ruiru Legal Aid Office",
+    "location": "Ruiru",
+    "county": "Kiambu",
+    "type": "Legal Aid",
+    "phone": "0700 120000"
+  },
+
+  {
+    "name": "Embu County Referral Hospital GBV Unit",
+    "location": "Embu Town",
+    "county": "Embu",
+    "type": "Medical",
+    "phone": "068 3120000"
+  },
+
+  {
+    "name": "Machakos Women Counselling Centre",
+    "location": "Machakos",
+    "county": "Machakos",
+    "type": "Counselling",
+    "phone": "044 2120000"
+  },
+
+  {
+    "name": "Kisumu County Referral Hospital GBV Unit",
+    "location": "Kisumu CBD",
+    "county": "Kisumu",
+    "type": "Medical",
+    "phone": "057 2020000"
+  },
+
+  {
+    "name": "Kakamega Legal Aid Clinic",
+    "location": "Kakamega Town",
+    "county": "Kakamega",
+    "type": "Legal Aid",
+    "phone": "056 2030000"
+  },
+
+  {
+    "name": "Bungoma County Hospital GBV Unit",
+    "location": "Bungoma Town",
+    "county": "Bungoma",
+    "type": "Medical",
+    "phone": "055 2100000"
+  },
+
+  {
+    "name": "Garissa GBV Support Centre",
+    "location": "Garissa Town",
+    "county": "Garissa",
+    "type": "Counselling",
     "phone": "046 2100000"
   },
+
   {
-    "name": "Isiolo County Hospital",
-    "location": "Isiolo",
-    "type": "Medical",
-    "phone": "064 5200000"
-  },
-  {
-    "name": "Marsabit County Referral Hospital",
-    "location": "Marsabit",
-    "type": "Medical",
-    "phone": "069 2100000"
-  },
-  {
-    "name": "Wajir County Referral Hospital",
-    "location": "Wajir",
+    "name": "Wajir County Hospital GBV Unit",
+    "location": "Wajir Town",
+    "county": "Wajir",
     "type": "Medical",
     "phone": "046 5200000"
   },
+
   {
-    "name": "Mandera County Referral Hospital",
-    "location": "Mandera",
-    "type": "Medical",
+    "name": "Mandera Legal Aid Office",
+    "location": "Mandera Town",
+    "county": "Mandera",
+    "type": "Legal Aid",
     "phone": "046 6200000"
+  },
+
+  {
+    "name": "Mombasa Women Shelter",
+    "location": "Mombasa Island",
+    "county": "Mombasa",
+    "type": "Shelter",
+    "phone": "041 2310000"
+  },
+
+  {
+    "name": "Kilifi County Hospital GBV Unit",
+    "location": "Kilifi Town",
+    "county": "Kilifi",
+    "type": "Medical",
+    "phone": "041 7520000"
+  },
+
+  {
+    "name": "Kwale Legal Aid Centre",
+    "location": "Ukunda",
+    "county": "Kwale",
+    "type": "Legal Aid",
+    "phone": "041 8010000"
+  },
+    {
+    "name": "FIDA Kenya Legal Aid Centre",
+    "location": "Nairobi (Kilimani)",
+    "type": "Legal Aid",
+    "phone": "020 3870420"
+  },
+  {
+    "name": "Kituo Cha Sheria Legal Aid Centre",
+    "location": "Nairobi (Eastleigh)",
+    "type": "Legal Aid",
+    "phone": "020 3876663"
+  },
+  {
+    "name": "Kenya Red Cross GBV Support & Shelter Services",
+    "location": "Nairobi",
+    "type": "Shelter",
+    "phone": "1199"
+  },
+  {
+    "name": "Grace House Shelter for Survivors",
+    "location": "Nairobi",
+    "type": "Shelter",
+    "phone": "0722 123456"
+  },
+
+  {
+    "name": "Naivasha Sub-County Hospital GBV Unit",
+    "location": "Naivasha",
+    "type": "Medical",
+    "phone": "050 2020000"
+  },
+  {
+    "name": "Gilgil Health Centre GBV Desk",
+    "location": "Gilgil",
+    "type": "Medical",
+    "phone": "051 2100000"
+  },
+  {
+    "name": "Nakuru Women Counselling Centre",
+    "location": "Nakuru",
+    "type": "Counselling",
+    "phone": "051 2233000"
+  },
+
+  {
+    "name": "Kisumu Women Counselling Centre",
+    "location": "Kisumu",
+    "type": "Counselling",
+    "phone": "057 2233440"
+  },
+  {
+    "name": "Kakamega County Counselling Centre",
+    "location": "Kakamega",
+    "type": "Counselling",
+    "phone": "056 2100000"
+  },
+  {
+    "name": "Bungoma Legal Aid Clinic",
+    "location": "Bungoma",
+    "type": "Legal Aid",
+    "phone": "055 2109999"
+  },
+
+  {
+    "name": "Machakos GBV Recovery Centre",
+    "location": "Machakos",
+    "type": "Counselling",
+    "phone": "044 2123456"
+  },
+  {
+    "name": "Kitui Women Support Centre",
+    "location": "Kitui",
+    "type": "Counselling",
+    "phone": "0700 445566"
+  },
+
+  {
+    "name": "Embu Legal Aid Office",
+    "location": "Embu",
+    "type": "Legal Aid",
+    "phone": "068 2100000"
+  },
+
+  {
+    "name": "Malindi Sub-County Hospital GBV Unit",
+    "location": "Malindi",
+    "type": "Medical",
+    "phone": "041 7521000"
+  },
+  {
+    "name": "Mombasa Legal Aid Centre",
+    "location": "Mombasa",
+    "type": "Legal Aid",
+    "phone": "041 2311234"
+  },
+  {
+    "name": "Likoni Women Counselling Centre",
+    "location": "Likoni",
+    "type": "Counselling",
+    "phone": "0700 667788"
+  },
+
+  {
+    "name": "Dadaab Refugee GBV Support Centre",
+    "location": "Dadaab",
+    "type": "Counselling",
+    "phone": "0700 110011"
+  },
+  {
+    "name": "Lodwar County Referral Hospital GBV Unit",
+    "location": "Turkana",
+    "type": "Medical",
+    "phone": "054 2100000"
   }
 ]
