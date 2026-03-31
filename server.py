@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 # ── Config ──────────────────────────────────
 API_KEY  = os.environ.get("RAPIDAPI_KEY", "68ba2a96e3msh69a4973216ca155p1562f4jsnf04bcad350f9")
 API_HOST = "africa-health-facilities-api1.p.rapidapi.com"
-BASE_URL = f"https://{API_HOST}/api/v1"
+BASE_URL = f"https://{africa-health-facilities-api1.p.rapidapi.com}/api/v1"
 
 HEADERS = {
     "x-rapidapi-key":  API_KEY,
