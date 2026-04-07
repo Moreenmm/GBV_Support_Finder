@@ -96,7 +96,7 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   position: sticky;
-  top: 40px;
+  top: 0;
   z-index: 900;
 }
 .header-inner {
@@ -153,7 +153,7 @@ body {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  padding: 40px 32px 30px;
+  padding: 40px 32px 20px;
 }
 .hero-bg {
   position: absolute;
@@ -304,7 +304,7 @@ body {
 }
 
 /* ── Services Section ────── */
-.services-section { padding: 20px 0 100px; }
+.services-section { padding: 20px 0 60px; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 .section-header { text-align: center; margin-bottom: 48px; }
 .section-title {
