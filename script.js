@@ -178,7 +178,8 @@ function getLocation() {
 
 // INIT
 document.addEventListener('DOMContentLoaded', () => {
-  searchServices();
+  allResults = [];
+  renderCards([]);
 
   document.getElementById('locationInput')?.addEventListener('keydown', e => {
     if (e.key === 'Enter') searchServices();
