@@ -33,7 +33,7 @@ def get_centers():
         or location in c.get("county", "").lower()
     ]
 
-    return jsonify(centers)
+    return jsonify(filtered)
 
 @app.route("/")
 def home():
