@@ -107,17 +107,20 @@ async function searchServices() {
   empty.classList.add('hidden');
   grid.innerHTML = '';
 
+  if (!location) {
+    empty.classList.remove('hidden');
+    empty.innerHTML = "<p>Please enter a location to search</p>";
+    return;
+  }
+
   loading.innerHTML = `
     <div class="skeleton-grid">
       ${Array(6).fill('<div class="skeleton-card"></div>').join('')}
     </div>`;
 
   try {
-    const url = location
-      ? `/api/centers?location=${encodeURIComponent(location)}`
-      : `/api/centers`;
+    const res = await fetch(`/api/centers?location=${encodeURIComponent(location)}`);
 
-    const res = await fetch(url);
     if (!res.ok) throw new Error('Server error');
 
     allResults = await res.json();
@@ -178,7 +181,6 @@ function getLocation() {
 
 // INIT
 document.addEventListener('DOMContentLoaded', () => {
-  allResults = [];
   renderCards([]);
 
   document.getElementById('locationInput')?.addEventListener('keydown', e => {
