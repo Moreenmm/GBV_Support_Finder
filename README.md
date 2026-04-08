@@ -19,7 +19,7 @@ REST API was built by Flask and I also used Geolocation support. The users can s
 ## API used
 I used a custom-built REST API for this project.
 
-##Files present
+## Files present
 1. centers.json - It has all the data custom built by REST API.
 2. server.py - This uses python and supports the backend part of the application.
 3. index.html - This is part of the frontend that basically structures the contents of the webpage.
