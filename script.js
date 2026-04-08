@@ -182,15 +182,17 @@ function getLocation() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("DOM loaded");
+  try {
+    renderCards([]);
+  } catch (e) {
+    console.log("renderCards error:", e);
+  }
 
-  // footer year
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // enter key search
   const input = document.getElementById('locationInput');
   if (input) {
     input.addEventListener('keydown', (e) => {
