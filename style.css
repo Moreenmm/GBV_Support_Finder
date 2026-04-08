@@ -698,6 +698,14 @@ body {
   max-width: 440px;
   line-height: 1.6;
 }
+.site-footer {
+  color: white;
+}
+
+.site-footer p {
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+}
 
 /* ── Responsive ────── */
 @media (max-width: 768px) {
