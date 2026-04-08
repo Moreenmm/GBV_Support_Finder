@@ -1,3 +1,5 @@
+console.log("script loaded");
+
 // GLOBAL STATE
 let allResults = [];
 let currentFilter = 'all';
