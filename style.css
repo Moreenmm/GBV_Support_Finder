@@ -682,6 +682,7 @@ body {
 .site-footer {
   background: var(--ink);
   padding: 40px 0;
+  color: rgba(255,255,255,0.85);
 }
 .footer-inner {
   display: flex;
