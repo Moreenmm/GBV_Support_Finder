@@ -182,7 +182,7 @@ function getLocation() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderCards([]);
+  console.log("DOM loaded");
 
   // footer year
   const yearEl = document.getElementById("year");
