@@ -179,12 +179,20 @@ function getLocation() {
   );
 }
 
-// INIT
 document.addEventListener('DOMContentLoaded', () => {
   renderCards([]);
 
-  document.getElementById('locationInput')?.addEventListener('keydown', e => {
-    if (e.key === 'Enter') searchServices();
-  });
-});
+  // footer year
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
 
+  // enter key search
+  const input = document.getElementById('locationInput');
+  if (input) {
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') searchServices();
+    });
+  }
+});
