@@ -22,14 +22,18 @@ except Exception as e:
 def get_centers():
     location = request.args.get("location")
 
-    if location:
-        filtered = [
-            c for c in centers
-            if location.lower() in c.get("location", "").lower()
-        ]
-        return jsonify(filtered)
+    if not location:
+        return jsonify([])
 
-    return jsonify(centers)
+    location = location.lower()
+
+    filtered = [
+        c for c in centers
+        if location in c.get("location", "").lower()
+        or location in c.get("county", "").lower()
+    ]
+
+    return jsonify(filtered)
 
 @app.route("/")
 def home():

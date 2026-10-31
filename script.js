@@ -1,7 +1,3 @@
-// API address//
-const API_BASE = ['localhost', '127.0.0.1', ''].includes(window.location.hostname)
-  ? 'http://localhost:5000'
-  : '';
 // GLOBAL STATE
 let allResults = [];
 let currentFilter = 'all';
@@ -111,6 +107,12 @@ async function searchServices() {
   empty.classList.add('hidden');
   grid.innerHTML = '';
 
+  if (!location) {
+    empty.classList.remove('hidden');
+    empty.innerHTML = "<p>Please enter a location to search</p>";
+    return;
+  }
+
   loading.innerHTML = `
     <div class="skeleton-grid">
       ${Array(6).fill('<div class="skeleton-card"></div>').join('')}
@@ -118,10 +120,9 @@ async function searchServices() {
 
   try {
     const url = location
-      ? `${API_BASE}/api/centers?location=${encodeURIComponent(location)}`
-      : `${API_BASE}/api/centers`;
+      ? `/api/centers?location=${encodeURIComponent(location)}`
+      : `/api/centers`;
 
-    const res = await fetch(url);
     if (!res.ok) throw new Error('Server error');
 
     allResults = await res.json();
@@ -180,11 +181,23 @@ function getLocation() {
   );
 }
 
-// INIT
 document.addEventListener('DOMContentLoaded', () => {
-  searchServices();
+  try {
+    renderCards([]);
+  } catch (e) {
+    console.log("renderCards error:", e);
+  }
 
-  document.getElementById('locationInput')?.addEventListener('keydown', e => {
-    if (e.key === 'Enter') searchServices();
-  });
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  const input = document.getElementById('locationInput');
+  if (input) {
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') searchServices();
+    });
+  }
 });
+

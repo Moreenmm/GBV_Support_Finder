@@ -96,7 +96,7 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   position: sticky;
-  top: 40px;
+  top: 0;
   z-index: 900;
 }
 .header-inner {
@@ -149,11 +149,11 @@ body {
 /* ── Hero ───── */
 .hero {
   position: relative;
-  min-height: 86vh;
+  min-height: 46vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
-  padding: 80px 32px 60px;
+  padding: 40px 32px 20px;
 }
 .hero-bg {
   position: absolute;
@@ -239,7 +239,7 @@ body {
   border-radius: 100px;
   padding: 6px 6px 6px 20px;
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 10px;
   transition: border-color 0.2s, box-shadow 0.2s;
   box-shadow: var(--shadow-md);
 }
@@ -304,7 +304,7 @@ body {
 }
 
 /* ── Services Section ────── */
-.services-section { padding: 80px 0 100px; }
+.services-section { padding: 20px 0 60px; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
 .section-header { text-align: center; margin-bottom: 48px; }
 .section-title {
@@ -682,6 +682,7 @@ body {
 .site-footer {
   background: var(--ink);
   padding: 40px 0;
+  color: rgba(255,255,255,0.85);
 }
 .footer-inner {
   display: flex;
@@ -697,6 +698,14 @@ body {
   color: rgba(255,255,255,0.35);
   max-width: 440px;
   line-height: 1.6;
+}
+.site-footer {
+  color: white;
+}
+
+.site-footer p {
+  color: rgba(255,255,255,0.8);
+  text-align: center;
 }
 
 /* ── Responsive ────── */
