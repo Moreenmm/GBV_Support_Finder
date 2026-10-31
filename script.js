@@ -1,3 +1,7 @@
+// API address//
+const API_BASE = ['localhost', '127.0.0.1', ''].includes(window.location.hostname)
+  ? 'http://localhost:5000'
+  : '';
 // GLOBAL STATE
 let allResults = [];
 let currentFilter = 'all';
@@ -114,8 +118,8 @@ async function searchServices() {
 
   try {
     const url = location
-      ? `/api/centers?location=${encodeURIComponent(location)}`
-      : `/api/centers`;
+      ? `${API_BASE}/api/centers?location=${encodeURIComponent(location)}`
+      : `${API_BASE}/api/centers`;
 
     const res = await fetch(url);
     if (!res.ok) throw new Error('Server error');
@@ -184,4 +188,3 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Enter') searchServices();
   });
 });
-

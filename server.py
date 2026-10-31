@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory, abort
 from flask_cors import CORS
 import json
 import os
@@ -33,8 +33,10 @@ def get_centers():
 
 @app.route("/")
 def home():
-    return jsonify({"message": "SafeReach API is running"})
+    return send_from_directory(BASE_DIR, "index.html")
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
-
+@app.route("/<path:filename>")
+def frontend_files(filename):
+    if filename in ("style.css", "script.js"):
+        return send_from_directory(BASE_DIR, filename)
+    abort(404)
